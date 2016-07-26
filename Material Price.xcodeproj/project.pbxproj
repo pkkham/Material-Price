@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD6ED22E1D46F11300A3C011 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6ED22D1D46F11300A3C011 /* AppDelegate.swift */; };
+		FD6ED2301D46F11300A3C011 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6ED22F1D46F11300A3C011 /* ViewController.swift */; };
+		FD6ED2331D46F11300A3C011 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD6ED2311D46F11300A3C011 /* Main.storyboard */; };
+		FD6ED2361D46F11300A3C011 /* Material_Price.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD6ED2341D46F11300A3C011 /* Material_Price.xcdatamodeld */; };
+		FD6ED2381D46F11300A3C011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6ED2371D46F11300A3C011 /* Assets.xcassets */; };
+		FD6ED23B1D46F11300A3C011 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD6ED2391D46F11300A3C011 /* LaunchScreen.storyboard */; };
+		FD6ED2461D46F11300A3C011 /* Material_PriceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6ED2451D46F11300A3C011 /* Material_PriceTests.swift */; };
+		FD6ED2511D46F11300A3C011 /* Material_PriceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6ED2501D46F11300A3C011 /* Material_PriceUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD6ED2421D46F11300A3C011 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD6ED2221D46F11300A3C011 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD6ED2291D46F11300A3C011;
+			remoteInfo = "Material Price";
+		};
+		FD6ED24D1D46F11300A3C011 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD6ED2221D46F11300A3C011 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD6ED2291D46F11300A3C011;
+			remoteInfo = "Material Price";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD6ED22A1D46F11300A3C011 /* Material Price.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Material Price.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD6ED22D1D46F11300A3C011 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD6ED22F1D46F11300A3C011 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD6ED2321D46F11300A3C011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD6ED2351D46F11300A3C011 /* Material_Price.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Material_Price.xcdatamodel; sourceTree = "<group>"; };
+		FD6ED2371D46F11300A3C011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD6ED23A1D46F11300A3C011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD6ED23C1D46F11300A3C011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD6ED2411D46F11300A3C011 /* Material PriceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Material PriceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD6ED2451D46F11300A3C011 /* Material_PriceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material_PriceTests.swift; sourceTree = "<group>"; };
+		FD6ED2471D46F11300A3C011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD6ED24C1D46F11300A3C011 /* Material PriceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Material PriceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD6ED2501D46F11300A3C011 /* Material_PriceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material_PriceUITests.swift; sourceTree = "<group>"; };
+		FD6ED2521D46F11300A3C011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD6ED2271D46F11300A3C011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6ED23E1D46F11300A3C011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6ED2491D46F11300A3C011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD6ED2211D46F11300A3C011 = {
+			isa = PBXGroup;
+			children = (
+				FD6ED22C1D46F11300A3C011 /* Material Price */,
+				FD6ED2441D46F11300A3C011 /* Material PriceTests */,
+				FD6ED24F1D46F11300A3C011 /* Material PriceUITests */,
+				FD6ED22B1D46F11300A3C011 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD6ED22B1D46F11300A3C011 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD6ED22A1D46F11300A3C011 /* Material Price.app */,
+				FD6ED2411D46F11300A3C011 /* Material PriceTests.xctest */,
+				FD6ED24C1D46F11300A3C011 /* Material PriceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD6ED22C1D46F11300A3C011 /* Material Price */ = {
+			isa = PBXGroup;
+			children = (
+				FD6ED22D1D46F11300A3C011 /* AppDelegate.swift */,
+				FD6ED22F1D46F11300A3C011 /* ViewController.swift */,
+				FD6ED2311D46F11300A3C011 /* Main.storyboard */,
+				FD6ED2371D46F11300A3C011 /* Assets.xcassets */,
+				FD6ED2391D46F11300A3C011 /* LaunchScreen.storyboard */,
+				FD6ED23C1D46F11300A3C011 /* Info.plist */,
+				FD6ED2341D46F11300A3C011 /* Material_Price.xcdatamodeld */,
+			);
+			path = "Material Price";
+			sourceTree = "<group>";
+		};
+		FD6ED2441D46F11300A3C011 /* Material PriceTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD6ED2451D46F11300A3C011 /* Material_PriceTests.swift */,
+				FD6ED2471D46F11300A3C011 /* Info.plist */,
+			);
+			path = "Material PriceTests";
+			sourceTree = "<group>";
+		};
+		FD6ED24F1D46F11300A3C011 /* Material PriceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD6ED2501D46F11300A3C011 /* Material_PriceUITests.swift */,
+				FD6ED2521D46F11300A3C011 /* Info.plist */,
+			);
+			path = "Material PriceUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD6ED2291D46F11300A3C011 /* Material Price */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD6ED2551D46F11300A3C011 /* Build configuration list for PBXNativeTarget "Material Price" */;
+			buildPhases = (
+				FD6ED2261D46F11300A3C011 /* Sources */,
+				FD6ED2271D46F11300A3C011 /* Frameworks */,
+				FD6ED2281D46F11300A3C011 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Material Price";
+			productName = "Material Price";
+			productReference = FD6ED22A1D46F11300A3C011 /* Material Price.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD6ED2401D46F11300A3C011 /* Material PriceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD6ED2581D46F11300A3C011 /* Build configuration list for PBXNativeTarget "Material PriceTests" */;
+			buildPhases = (
+				FD6ED23D1D46F11300A3C011 /* Sources */,
+				FD6ED23E1D46F11300A3C011 /* Frameworks */,
+				FD6ED23F1D46F11300A3C011 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD6ED2431D46F11300A3C011 /* PBXTargetDependency */,
+			);
+			name = "Material PriceTests";
+			productName = "Material PriceTests";
+			productReference = FD6ED2411D46F11300A3C011 /* Material PriceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD6ED24B1D46F11300A3C011 /* Material PriceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD6ED25B1D46F11300A3C011 /* Build configuration list for PBXNativeTarget "Material PriceUITests" */;
+			buildPhases = (
+				FD6ED2481D46F11300A3C011 /* Sources */,
+				FD6ED2491D46F11300A3C011 /* Frameworks */,
+				FD6ED24A1D46F11300A3C011 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD6ED24E1D46F11300A3C011 /* PBXTargetDependency */,
+			);
+			name = "Material PriceUITests";
+			productName = "Material PriceUITests";
+			productReference = FD6ED24C1D46F11300A3C011 /* Material PriceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD6ED2221D46F11300A3C011 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Kristina Khamken";
+				TargetAttributes = {
+					FD6ED2291D46F11300A3C011 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					FD6ED2401D46F11300A3C011 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = FD6ED2291D46F11300A3C011;
+					};
+					FD6ED24B1D46F11300A3C011 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = FD6ED2291D46F11300A3C011;
+					};
+				};
+			};
+			buildConfigurationList = FD6ED2251D46F11300A3C011 /* Build configuration list for PBXProject "Material Price" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD6ED2211D46F11300A3C011;
+			productRefGroup = FD6ED22B1D46F11300A3C011 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD6ED2291D46F11300A3C011 /* Material Price */,
+				FD6ED2401D46F11300A3C011 /* Material PriceTests */,
+				FD6ED24B1D46F11300A3C011 /* Material PriceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD6ED2281D46F11300A3C011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6ED23B1D46F11300A3C011 /* LaunchScreen.storyboard in Resources */,
+				FD6ED2381D46F11300A3C011 /* Assets.xcassets in Resources */,
+				FD6ED2331D46F11300A3C011 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6ED23F1D46F11300A3C011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6ED24A1D46F11300A3C011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD6ED2261D46F11300A3C011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6ED2301D46F11300A3C011 /* ViewController.swift in Sources */,
+				FD6ED2361D46F11300A3C011 /* Material_Price.xcdatamodeld in Sources */,
+				FD6ED22E1D46F11300A3C011 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6ED23D1D46F11300A3C011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6ED2461D46F11300A3C011 /* Material_PriceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6ED2481D46F11300A3C011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6ED2511D46F11300A3C011 /* Material_PriceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD6ED2431D46F11300A3C011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD6ED2291D46F11300A3C011 /* Material Price */;
+			targetProxy = FD6ED2421D46F11300A3C011 /* PBXContainerItemProxy */;
+		};
+		FD6ED24E1D46F11300A3C011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD6ED2291D46F11300A3C011 /* Material Price */;
+			targetProxy = FD6ED24D1D46F11300A3C011 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD6ED2311D46F11300A3C011 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD6ED2321D46F11300A3C011 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD6ED2391D46F11300A3C011 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD6ED23A1D46F11300A3C011 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD6ED2531D46F11300A3C011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD6ED2541D46F11300A3C011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD6ED2561D46F11300A3C011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Material Price/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Material-Price";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FD6ED2571D46F11300A3C011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Material Price/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Material-Price";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FD6ED2591D46F11300A3C011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Material PriceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Material-PriceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Material Price.app/Material Price";
+			};
+			name = Debug;
+		};
+		FD6ED25A1D46F11300A3C011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Material PriceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Material-PriceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Material Price.app/Material Price";
+			};
+			name = Release;
+		};
+		FD6ED25C1D46F11300A3C011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Material PriceUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Material-PriceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Material Price";
+			};
+			name = Debug;
+		};
+		FD6ED25D1D46F11300A3C011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Material PriceUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Material-PriceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Material Price";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD6ED2251D46F11300A3C011 /* Build configuration list for PBXProject "Material Price" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD6ED2531D46F11300A3C011 /* Debug */,
+				FD6ED2541D46F11300A3C011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD6ED2551D46F11300A3C011 /* Build configuration list for PBXNativeTarget "Material Price" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD6ED2561D46F11300A3C011 /* Debug */,
+				FD6ED2571D46F11300A3C011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FD6ED2581D46F11300A3C011 /* Build configuration list for PBXNativeTarget "Material PriceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD6ED2591D46F11300A3C011 /* Debug */,
+				FD6ED25A1D46F11300A3C011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FD6ED25B1D46F11300A3C011 /* Build configuration list for PBXNativeTarget "Material PriceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD6ED25C1D46F11300A3C011 /* Debug */,
+				FD6ED25D1D46F11300A3C011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FD6ED2341D46F11300A3C011 /* Material_Price.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FD6ED2351D46F11300A3C011 /* Material_Price.xcdatamodel */,
+			);
+			currentVersion = FD6ED2351D46F11300A3C011 /* Material_Price.xcdatamodel */;
+			path = Material_Price.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FD6ED2221D46F11300A3C011 /* Project object */;
+}
