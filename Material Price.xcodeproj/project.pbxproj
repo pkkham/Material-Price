@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		FD6ED22E1D46F11300A3C011 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6ED22D1D46F11300A3C011 /* AppDelegate.swift */; };
-		FD6ED2301D46F11300A3C011 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6ED22F1D46F11300A3C011 /* ViewController.swift */; };
 		FD6ED2331D46F11300A3C011 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD6ED2311D46F11300A3C011 /* Main.storyboard */; };
 		FD6ED2361D46F11300A3C011 /* Material_Price.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD6ED2341D46F11300A3C011 /* Material_Price.xcdatamodeld */; };
 		FD6ED2381D46F11300A3C011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6ED2371D46F11300A3C011 /* Assets.xcassets */; };
 		FD6ED23B1D46F11300A3C011 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD6ED2391D46F11300A3C011 /* LaunchScreen.storyboard */; };
 		FD6ED2461D46F11300A3C011 /* Material_PriceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6ED2451D46F11300A3C011 /* Material_PriceTests.swift */; };
 		FD6ED2511D46F11300A3C011 /* Material_PriceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6ED2501D46F11300A3C011 /* Material_PriceUITests.swift */; };
+		FD6ED25F1D46F15500A3C011 /* MaterialTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6ED25E1D46F15500A3C011 /* MaterialTableViewController.swift */; };
+		FD6ED2611D46F48400A3C011 /* NewMaterialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6ED2601D46F48400A3C011 /* NewMaterialViewController.swift */; };
+		FD6ED2641D46FD8900A3C011 /* Material+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6ED2621D46FD8900A3C011 /* Material+CoreDataProperties.swift */; };
+		FD6ED2651D46FD8900A3C011 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6ED2631D46FD8900A3C011 /* Material.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,6 @@
 /* Begin PBXFileReference section */
 		FD6ED22A1D46F11300A3C011 /* Material Price.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Material Price.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6ED22D1D46F11300A3C011 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FD6ED22F1D46F11300A3C011 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FD6ED2321D46F11300A3C011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD6ED2351D46F11300A3C011 /* Material_Price.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Material_Price.xcdatamodel; sourceTree = "<group>"; };
 		FD6ED2371D46F11300A3C011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		FD6ED24C1D46F11300A3C011 /* Material PriceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Material PriceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6ED2501D46F11300A3C011 /* Material_PriceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material_PriceUITests.swift; sourceTree = "<group>"; };
 		FD6ED2521D46F11300A3C011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD6ED25E1D46F15500A3C011 /* MaterialTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTableViewController.swift; sourceTree = "<group>"; };
+		FD6ED2601D46F48400A3C011 /* NewMaterialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMaterialViewController.swift; sourceTree = "<group>"; };
+		FD6ED2621D46FD8900A3C011 /* Material+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Material+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FD6ED2631D46FD8900A3C011 /* Material.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +105,12 @@
 		FD6ED22C1D46F11300A3C011 /* Material Price */ = {
 			isa = PBXGroup;
 			children = (
+				FD6ED2621D46FD8900A3C011 /* Material+CoreDataProperties.swift */,
+				FD6ED2631D46FD8900A3C011 /* Material.swift */,
 				FD6ED22D1D46F11300A3C011 /* AppDelegate.swift */,
-				FD6ED22F1D46F11300A3C011 /* ViewController.swift */,
 				FD6ED2311D46F11300A3C011 /* Main.storyboard */,
+				FD6ED25E1D46F15500A3C011 /* MaterialTableViewController.swift */,
+				FD6ED2601D46F48400A3C011 /* NewMaterialViewController.swift */,
 				FD6ED2371D46F11300A3C011 /* Assets.xcassets */,
 				FD6ED2391D46F11300A3C011 /* LaunchScreen.storyboard */,
 				FD6ED23C1D46F11300A3C011 /* Info.plist */,
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD6ED2301D46F11300A3C011 /* ViewController.swift in Sources */,
+				FD6ED2641D46FD8900A3C011 /* Material+CoreDataProperties.swift in Sources */,
 				FD6ED2361D46F11300A3C011 /* Material_Price.xcdatamodeld in Sources */,
+				FD6ED25F1D46F15500A3C011 /* MaterialTableViewController.swift in Sources */,
+				FD6ED2611D46F48400A3C011 /* NewMaterialViewController.swift in Sources */,
+				FD6ED2651D46FD8900A3C011 /* Material.swift in Sources */,
 				FD6ED22E1D46F11300A3C011 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
