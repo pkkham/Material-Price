@@ -15,11 +15,10 @@ class NewMaterialViewController: UIViewController {
 
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var priceField: UITextField!
-    @IBOutlet weak var descField: UITextView!
     
-    let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+    let managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).managedObjectContext
     
-    @IBAction func save(sender: AnyObject) {
+    @IBAction func save(_ sender: AnyObject) {
         if nameField.text == "" && priceField.text == "" {
             alert()
             //dismiss()
@@ -34,28 +33,28 @@ class NewMaterialViewController: UIViewController {
         }
     }
     
-    @IBAction func cancel(sender: AnyObject) {
+    @IBAction func cancel(_ sender: AnyObject) {
         dismiss()
     }
     
     func dismiss() {
-        navigationController?.popViewControllerAnimated(true)
+        navigationController?.popViewController(animated: true)
     }
     
     func alert() {
         let alertView = UIAlertController(title: "Invalid Material",
                                           message: "Please fill in the empty sections",
-                                          preferredStyle: .Alert)
-        alertView.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-        self.presentViewController(alertView, animated: true, completion: nil)
+                                          preferredStyle: .alert)
+        alertView.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alertView, animated: true, completion: nil)
     }
         
     
     func createNew() {
-        let entityDescription = NSEntityDescription.entityForName("Material", inManagedObjectContext: managedObjectContext)
-        let material = Material(entity: entityDescription!, insertIntoManagedObjectContext: managedObjectContext)
+        let entityDescription = NSEntityDescription.entity(forEntityName: "Material", in: managedObjectContext)
+        let material = Material(entity: entityDescription!, insertInto: managedObjectContext)
         material.name = nameField.text
-        material.price = Double(priceField.text!)
+        material.price = Double(priceField.text!) as NSNumber?
         
         do {
             try managedObjectContext.save()
