@@ -38,7 +38,7 @@ class NewMaterialViewController: UIViewController {
     }
     
     func dismiss() {
-        navigationController?.popViewController(animated: true)
+        _ = navigationController?.popViewController(animated: true)
     }
     
     func alert() {

@@ -80,20 +80,45 @@ class MaterialTableViewController: UITableViewController, NSFetchedResultsContro
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    /*override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         let managedObject:NSManagedObject = fetchedResultController.object(at: indexPath) as NSManagedObject
         managedObjectContext.delete(managedObject)
         do {
             try managedObjectContext.save()
         } catch _ {
         }
-    }
+    }*/
     
-    //func tableView(_ tableView: UITableView, editActionsForRowAtIndexPath indexPath: IndexPath) -> [UITableViewRowAction]?  {
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]?  {
+        let delete = UITableViewRowAction(style: .destructive, title: "Delete") { (action, indexPath) in
+
+            let managedObject:NSManagedObject = self.fetchedResultController.object(at: indexPath) as NSManagedObject
+            self.managedObjectContext.delete(managedObject)
+            do {
+                try self.managedObjectContext.save()
+            } catch _ {
+            }
+            
+        }
         
-    //}
+        let edit = UITableViewRowAction(style: .normal, title: "Edit") { (action, indexPath) in
+            self.editVC(indexPath: indexPath)
+        }
+        
+        return [delete, edit]
+    }
     
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.reloadData()
+    }
+    
+    func editVC(indexPath: IndexPath) {
+        let controller = self.storyboard?.instantiateViewController(withIdentifier: "EditMaterialVC") as! EditMaterialViewController
+        let material:Material = fetchedResultController.object(at: indexPath)
+        
+        controller.name = material.name
+        controller.price = material.price
+        
+        self.present(controller, animated: true, completion: nil)
     }
 }

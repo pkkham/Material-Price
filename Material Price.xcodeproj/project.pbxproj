@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD54971F1DD13ACC00E4ADE9 /* EditMaterialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD54971E1DD13ACC00E4ADE9 /* EditMaterialViewController.swift */; };
 		FD567B2C1D778D700016202F /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD567B2B1D778D700016202F /* CalculateViewController.swift */; };
 		FD6ED22E1D46F11300A3C011 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6ED22D1D46F11300A3C011 /* AppDelegate.swift */; };
 		FD6ED2331D46F11300A3C011 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD6ED2311D46F11300A3C011 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD54971E1DD13ACC00E4ADE9 /* EditMaterialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditMaterialViewController.swift; sourceTree = "<group>"; };
 		FD567B2B1D778D700016202F /* CalculateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
 		FD6ED22A1D46F11300A3C011 /* Material Price.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Material Price.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6ED22D1D46F11300A3C011 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				FD6ED22D1D46F11300A3C011 /* AppDelegate.swift */,
 				FD6ED2311D46F11300A3C011 /* Main.storyboard */,
 				FD6ED25E1D46F15500A3C011 /* MaterialTableViewController.swift */,
+				FD54971E1DD13ACC00E4ADE9 /* EditMaterialViewController.swift */,
 				FD6ED2601D46F48400A3C011 /* NewMaterialViewController.swift */,
 				FD567B2B1D778D700016202F /* CalculateViewController.swift */,
 				FD6ED2371D46F11300A3C011 /* Assets.xcassets */,
@@ -281,6 +284,7 @@
 				FD6ED25F1D46F15500A3C011 /* MaterialTableViewController.swift in Sources */,
 				FD6ED2611D46F48400A3C011 /* NewMaterialViewController.swift in Sources */,
 				FD6ED2651D46FD8900A3C011 /* Material.swift in Sources */,
+				FD54971F1DD13ACC00E4ADE9 /* EditMaterialViewController.swift in Sources */,
 				FD6ED22E1D46F11300A3C011 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
