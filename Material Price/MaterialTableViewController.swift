@@ -35,6 +35,15 @@ class MaterialTableViewController: UITableViewController, NSFetchedResultsContro
             calculateController.mat_name = material.name
             calculateController.mat_price = material.price
         }
+        
+        if (segue.identifier == "edit") {
+            //let cell = sender as! UITableViewCell
+            //let indexPath = tableView.indexPath(for: cell)
+            let editController:EditMaterialViewController = segue.destination as! EditMaterialViewController
+            let material:Material = fetchedResultController.object(at: sender! as! IndexPath)
+            editController.name = material.name
+            editController.price = material.price
+        }
     }
     
     func getFetchedResultController() -> NSFetchedResultsController<Material> {
@@ -80,18 +89,8 @@ class MaterialTableViewController: UITableViewController, NSFetchedResultsContro
         return cell
     }
     
-    /*override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        let managedObject:NSManagedObject = fetchedResultController.object(at: indexPath) as NSManagedObject
-        managedObjectContext.delete(managedObject)
-        do {
-            try managedObjectContext.save()
-        } catch _ {
-        }
-    }*/
-    
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]?  {
         let delete = UITableViewRowAction(style: .destructive, title: "Delete") { (action, indexPath) in
-
             let managedObject:NSManagedObject = self.fetchedResultController.object(at: indexPath) as NSManagedObject
             self.managedObjectContext.delete(managedObject)
             do {
@@ -102,7 +101,7 @@ class MaterialTableViewController: UITableViewController, NSFetchedResultsContro
         }
         
         let edit = UITableViewRowAction(style: .normal, title: "Edit") { (action, indexPath) in
-            self.editVC(indexPath: indexPath)
+            self.performSegue(withIdentifier: "edit", sender: indexPath)
         }
         
         return [delete, edit]
@@ -110,15 +109,5 @@ class MaterialTableViewController: UITableViewController, NSFetchedResultsContro
     
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.reloadData()
-    }
-    
-    func editVC(indexPath: IndexPath) {
-        let controller = self.storyboard?.instantiateViewController(withIdentifier: "EditMaterialVC") as! EditMaterialViewController
-        let material:Material = fetchedResultController.object(at: indexPath)
-        
-        controller.name = material.name
-        controller.price = material.price
-        
-        self.present(controller, animated: true, completion: nil)
     }
 }

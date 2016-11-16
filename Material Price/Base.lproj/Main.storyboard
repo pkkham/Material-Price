@@ -59,10 +59,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="mWt-Iw-zhM" kind="show" identifier="edit" id="XhV-8j-0w9"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="swI-ch-Xoy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="905.5" y="153.5"/>
+            <point key="canvasLocation" x="905" y="152"/>
         </scene>
         <!--Calculate View Controller-->
         <scene sceneID="JC5-G6-ude">
@@ -176,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TEg-te-qBu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1782" y="153"/>
+            <point key="canvasLocation" x="1694" y="152"/>
         </scene>
         <!--New Material-->
         <scene sceneID="rRh-h4-9Ap">
@@ -332,8 +335,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Edit Material" id="e3l-R9-YYt" userLabel="Edit Material">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="ec2-Xb-SDH" userLabel="Cancel"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="YEc-3r-3k5" userLabel="Save"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="ec2-Xb-SDH" userLabel="Cancel">
+                            <connections>
+                                <action selector="cancel:" destination="mWt-Iw-zhM" id="Uxh-tB-D6Y"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="YEc-3r-3k5" userLabel="Save">
+                            <connections>
+                                <action selector="save:" destination="mWt-Iw-zhM" id="9qB-fM-Wxi"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="nameField" destination="zCA-0U-kJU" id="iAd-6s-f7s"/>
@@ -342,25 +353,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dVc-yv-F2Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="905" y="-545"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Y9V-w9-Cw9">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="89l-wQ-f4C" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dgt-op-Zlt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="mWt-Iw-zhM" kind="relationship" relationship="rootViewController" id="3pQ-D8-s8W"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DRO-vU-hTv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="54" y="-544"/>
+            <point key="canvasLocation" x="1694" y="-545"/>
         </scene>
     </scenes>
 </document>
